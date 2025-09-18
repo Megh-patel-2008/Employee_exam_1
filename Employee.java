@@ -29,8 +29,19 @@ public class Employee{
     /**
      * Returns true is an employee is above 16 years old
      */
-    public boolean canDrive(){
+    public boolean CanDrive(){
         int age = calculateAge(2025);
+        if (calculateAge(2025) >= 16){
+            System.out.print("You can now legally drive!");
+            return true;
+        }
+        else{
+            System.out.print("youu will have to wait" + (16 - age) +" years left before driving");
+            return false;
+        }
+        
+        
+        
         /* Pseudo-code:
          * 1.getValue yearOfBirth
          * 2.setcurrentYear to 2025
@@ -42,6 +53,7 @@ public class Employee{
          *      calculateAgeDrive (16 - calculateAge)
          *      system.out.print("You have" + calculateAgeDrive + " years left before driving");
            */
+         
     }
 
     /*
