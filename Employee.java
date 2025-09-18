@@ -31,22 +31,40 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        
-        return boolean = 'true';
+        /* Pseudo-code:
+         * 1.getValue yearOfBirth
+         * 2.setcurrentYear to 2025
+         * 3.calculateAge(currentYear - YearOfBirth);
+         * 4. if calculateAge >=16
+         *      system.out.print("You can now legally drive!")
+         * 5.  else
+         *      calculateAge < 16
+         *      calculateAgeDrive (16 - calculateAge)
+         *      system.out.print("You have" + calculateAgeDrive + " years left before driving");
+           */
     }
 
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        // to be completedm
-        t
+        /*Pseudo-code:
+         * 1.getValue unpaidHours and hourlyWage
+         * set calculatePay to (unpaidHours * hourlyWage - 30%
+         * system.out.print(calculatePay + " is your net pay after taxes");
+           */
     }
 
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        // to be completed
+        /*Pseudo-code:
+         * 1.getpaySalary() value from calculatePay()
+         * 2. Get String fullname;
+         * 3.system.out.print(String fullname +" has received a wire transfert of " + paySalary)
+         *    then unpaidHours to 0
+           */
     }
+
 }
