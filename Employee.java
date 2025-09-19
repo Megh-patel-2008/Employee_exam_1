@@ -60,6 +60,9 @@ public class Employee{
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
+        double result = (unpaidHours * hourlyWage) * 0.70;
+        System.out.print(result + " is your net pay after taxes!");
+        return result;
         /*Pseudo-code:
          * 1.getValue unpaidHours and hourlyWage
          * set calculatePay to (unpaidHours * hourlyWage - 30%
@@ -71,6 +74,11 @@ public class Employee{
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
+        double paySalary = calculatePay();
+        String fullname = this.fullname;
+        System.out.print(fullname + " has received a wire transfert of " + paySalary);
+        unpaidHours = 0;
+        
         /*Pseudo-code:
          * 1.getpaySalary() value from calculatePay()
          * 2. Get String fullname;
